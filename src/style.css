@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/backgroundimg.png)  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+ 
+  #slotgame {
+
+    background-color: rgba(255, 0, 234, 0.39);
+    width: 700px;
+    height: 500px;
+    border: 20px solid #533eafab;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .content h2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(119, 0, 255);
+    font-size:3rem ;
+    font-weight: bolder;
+    text-shadow:.1em .1em 0 hsl(200 50% 30%) ;
+    font-family: monospace;
+   
+ }
+
+ #coinCount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8e402a;
+    background-color: goldenrod;
+  }
+
+
+  @keyframes pulsate {
+    0% {
+      font-size: 16px;
+    }
+    50% {
+      font-size: 20px;
+    }
+    100% {
+      font-size: 16px;
+    }
+  }
+  
+  .pulsating {
+    animation: pulsate 1s infinite;
+  }
+
+  
