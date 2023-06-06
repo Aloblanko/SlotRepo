@@ -28,6 +28,8 @@ body {
   position: relative;
 }
 
+
+
 #title {
   display: flex;
   align-items: center;
@@ -51,22 +53,3 @@ body {
   color: #8e402a;
   background-color: goldenrod;
 }
-
-/* pulsieren versuch  
-
-  @keyframes pulsate {
-    0% {
-      font-size: 16px;
-    }
-    50% {
-      font-size: 20px;
-    }
-    100% {
-      font-size: 16px;
-    }
-  }
-  
-  .pulsating {
-    animation: pulsate 1s infinite;
-  }
-*/

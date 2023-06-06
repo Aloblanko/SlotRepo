@@ -34,28 +34,7 @@ function randomSymbol() {
   return symbols[randomIndex];
 }
 
-//alte funktion
-// function playSlot() {
-//   const reel1 = randomSymbol();
-//   const reel2 = randomSymbol();
-//   const reel3 = randomSymbol();
 
-//   const result = `${reel1} | ${reel2} | ${reel3}`;
-
-//   slotgameElement.innerHTML = result;
-
-//   if (reel1 === reel2 && reel2 === reel3) {
-//     addCoins(0)
-//     slotgameElement.style.color = "green";
-//     slotgameElement.style.fontWeight = "bolder";
-//     slotgameElement.textContent += ' - Gewonnen!';
-//   } else {
-//     deductCoins(2);
-//     slotgameElement.style.color = "red";
-//     slotgameElement.style.fontWeight = "bold";
-//     slotgameElement.textContent += ' - Verloren!';
-//   }
-// }
 
 function calculateWin(symbol1, symbol2, symbol3) {
   const wins = {
@@ -75,6 +54,9 @@ function calculateWin(symbol1, symbol2, symbol3) {
     return 0;
   }
 }
+
+
+
 
 function playSlot() {
   const reel1 = randomSymbol();
@@ -98,7 +80,19 @@ function playSlot() {
     slotgameElement.style.fontWeight = "normal";
     slotgameElement.textContent += " (-2)";
   }
+
+  const symbolElements = slotgameElement.getElementsByTagName("span");
+  for (let i = 0; i < symbolElements.length; i++) {
+    const symbolElement = symbolElements[i];
+    symbolElement.style.top = "0px";
+    animateSymbol(symbolElement);
+    symbolElement.classList.add("scrolling");
+  }
 }
+
+
+
+
 
 //titel position 
 
