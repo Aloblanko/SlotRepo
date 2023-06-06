@@ -1,13 +1,11 @@
-// ESM syntax is supported.
-import esm from "./"
 
 
+"use strict";
 
+import { esm } from "./index" ;
 
 
 let coins = 100;
-
-
 
 function addCoins(amount) {
   coins += amount;
