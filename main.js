@@ -1,5 +1,6 @@
 "use strict";
 
+//import beispiel 
 // import { esm } from "./index" ;
 
 let coins = 100;
@@ -99,19 +100,23 @@ function playSlot() {
   }
 }
 
+//titel position 
+
 const titleElement = document.getElementById("title");
 
 function animateTitleUp() {
   titleElement.style.top = "50px"; // Change the desired position for the title animation
 }
 
+
+//spielen
 document.addEventListener("keydown", function (event) {
   if (event.code === "Space" && event.repeat === false) {
     if (coins >= 2) {
       playSlot();
       animateTitleUp();
     } else {
-      alert("Not enough coins. Minimum 2 coins required to play.");
+      alert("Nicht genug Coins. Du brauchst Mindestens 2 Coins zum Spielen.");
     }
   }
 });
