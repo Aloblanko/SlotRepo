@@ -47,6 +47,6 @@ Bei Fragen oder Problemen können Sie sich an den Autor des Projekts wenden.
 
 Dieses Projekt unterliegt [Urheberrechtsinformationen und Lizenzbestimmungen]. Bitte lesen Sie diese sorgfältig durch, bevor Sie das Projekt nutzen oder Änderungen daran vornehmen.
 
-Hier ist ein Demo-Link, der eine funktionierende Version des Slots-Spiels zeigt: [Demo-Link](https://aloblanko.github.io/SlotRepo/)
+Hier ist ein Demo-Link, der eine funktionierende Version des Slots-Spiels zeigt: [Demo](https://aloblanko.github.io/SlotRepo/)
 
 Sie können den Link öffnen und das Spiel im Browser spielen, um zu sehen, wie es funktioniert. Viel Spaß!
