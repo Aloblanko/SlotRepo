@@ -1,55 +1,58 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./img/backgroundimg.png)  ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
-  }
-  
- 
-  #slotgame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/backgroundimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+}
 
-    background-color: rgba(255, 0, 234, 0.39);
-    width: 700px;
-    height: 500px;
-    border: 20px solid #533eafab;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-  }
-  
-  .box {
-    display: flex;
-    flex-direction: column;
+#slotgame {
+  background-color: rgba(255, 0, 234, 0.39);
+  width: 700px;
+  height: 500px;
+  border: 20px solid #533eafab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  position: relative;
+}
 
-  }
+.box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
-  .content h2 {
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(119, 0, 255);
+  font-size: 3rem;
+  font-weight: bolder;
+  text-shadow: 0.1em 0.1em 0 hsl(200 50% 30%);
+  font-family: monospace;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 2s ease-out;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: rgb(119, 0, 255);
-    font-size:3rem ;
-    font-weight: bolder;
-    text-shadow:.1em .1em 0 hsl(200 50% 30%) ;
-    font-family: monospace;
-   
- }
+#coinCount {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8e402a;
+  background-color: goldenrod;
+}
 
- #coinCount {
-    font-size: 20px;
-    font-weight: bold;
-    color: #8e402a;
-    background-color: goldenrod;
-  }
-
+/* pulsieren versuch  
 
   @keyframes pulsate {
     0% {
@@ -66,5 +69,4 @@ body {
   .pulsating {
     animation: pulsate 1s infinite;
   }
-
-  
+*/

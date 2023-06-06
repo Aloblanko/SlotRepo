@@ -1,9 +1,6 @@
-
-
 "use strict";
 
 // import { esm } from "./index" ;
-
 
 let coins = 100;
 
@@ -18,7 +15,6 @@ function deductCoins(amount) {
     updateCoinCount();
     return true;
   } else {
-   
     return false;
   }
 }
@@ -28,18 +24,14 @@ function updateCoinCount() {
   coinCountElement.innerHTML = `&#x1F4B0 ${coins}`;
 }
 
-
-const symbols = ['💙', '🌹', '🌸', '🔥', '🍀', '❼'];
+const symbols = ["💙", "🌹", "🌸", "🔥", "🍀", "❼"];
 
 const slotgameElement = document.getElementById("slotgame");
-
 
 function randomSymbol() {
   const randomIndex = Math.floor(Math.random() * symbols.length);
   return symbols[randomIndex];
 }
-
-
 
 //alte funktion
 // function playSlot() {
@@ -64,8 +56,6 @@ function randomSymbol() {
 //   }
 // }
 
-
-
 function calculateWin(symbol1, symbol2, symbol3) {
   const wins = {
     "❼❼❼": 250,
@@ -73,7 +63,7 @@ function calculateWin(symbol1, symbol2, symbol3) {
     "🌹🌹🌹": 20,
     "🌸🌸🌸": 20,
     "🔥🔥🔥": 100,
-    "🍀🍀🍀": 20
+    "🍀🍀🍀": 20,
   };
 
   const winCombination = symbol1 + symbol2 + symbol3;
@@ -109,18 +99,19 @@ function playSlot() {
   }
 }
 
+const titleElement = document.getElementById("title");
 
-document.addEventListener("keydown", function(event) {
+function animateTitleUp() {
+  titleElement.style.top = "50px"; // Change the desired position for the title animation
+}
+
+document.addEventListener("keydown", function (event) {
   if (event.code === "Space" && event.repeat === false) {
     if (coins >= 2) {
-    
       playSlot();
+      animateTitleUp();
     } else {
       alert("Not enough coins. Minimum 2 coins required to play.");
     }
   }
 });
-
-
-  
-  
