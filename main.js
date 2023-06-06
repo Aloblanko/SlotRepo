@@ -2,7 +2,7 @@
 
 "use strict";
 
-import { esm } from "./index" ;
+// import { esm } from "./index" ;
 
 
 let coins = 100;
